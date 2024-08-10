@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --color-main: hsl(201, 20%, 23%);
+    --color-section: hsl(165, 19%, 40%);
+    --color-border: hsl(201, 20%, 23%);
+    --color-texto: hsl(0, 0%, 12%);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: var(--color-texto);
+}
+.contenedor{
+    background-color: var(--color-main);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-principal{
+    background-color: var(--color-section);
+    padding: 20px;
+    border-radius: 12px;
+    gap: 12px;
+}
+.foto{
+    width: 100px;
+    border-radius: 50%;
+}
+.tecnologia{
+    width: 40px;
+}
+.img-proyecto{
+    width: 300px;
+    border-radius: 0px 0px 12px 12px;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyectos{
+    display: flex;
+    gap: 20px;
+}
+.section-dos{
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textcontenido{
+    width: 300px;
+}
+.section-uno{
+    margin: 12px;
+}
+.proyecto b{
+    background-color: var(--color-main);
+    width: 300px;
+    color:azure;
+}
