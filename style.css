@@ -1,68 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-    --color-main: hsl(201, 20%, 23%);
-    --color-section: hsl(165, 19%, 40%);
-    --color-border: hsl(201, 20%, 23%);
-    --color-texto: hsl(0, 0%, 12%);
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --Eerie-black: hsl(0, 0%, 10%);
+    --Timberwolf: #ced0ce;
+    --Platinum: hsl(120, 4%, 91%);
+    --White: hsl(0, 0%, 100%);
+    --coquelicot: hsl(13, 88%, 55%);
 }
-*{
+
+* {
     margin: 0%;
     padding: 0%;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    color: var(--color-texto);
+    font-family: "JetBrains Mono", monospace;
 }
-.contenedor{
-    background-color: var(--color-main);
-    height: 100vh;
+
+header {
+    background: var(--Eerie-black);
+    color: var(--Timberwolf);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 10px var(--Eerie-black);
 }
-.section-principal{
-    background-color: var(--color-section);
-    padding: 20px;
-    border-radius: 12px;
-    gap: 12px;
+
+.logo {
+    width: 30%;
 }
-.foto{
-    width: 100px;
-    border-radius: 50%;
+
+nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
 }
-.tecnologia{
-    width: 40px;
+
+.link-nav {
+    color: var(--Timberwolf);
+    text-decoration: none;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: var(--Eerie-black);
 }
-.img-proyecto{
-    width: 300px;
-    border-radius: 0px 0px 12px 12px;
+
+.link-nav:hover {
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: var(--coquelicot);
+    color: var(--White);
 }
-.contenido{
+
+.contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.proyectos{
+
+.section-uno {
+    background: var(--Eerie-black);
+    color: var(--Timberwolf);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    width: 70%;
+    box-shadow: 0px 0px 5px var(--Eerie-black);
+    margin-top: 8%;
+    border-radius: 6px;
+}
+
+.foto {
+    background-image: url(/img/foto.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.section-dos {
+    margin-top: 5%;
+    width: 70%;
+    padding: 20px 0px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.proyectos {
     display: flex;
     gap: 20px;
 }
-.section-dos{
-    display: flex;
-    justify-content: center;
-    margin: 12px;
+
+.titulo {
+    color: var(--Eerie-black);
+    border-style: ridge;
+    border-width: 0px 0px 5px 0px;
+    border-color: var(--coquelicot);
+    border-radius: 6px;
+    width: 150px;
+    font-size: x-large;
 }
-.proyecto{
+
+.proyecto {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    background: var(--Eerie-black);
+    height: 300px;
+    border-radius: 6px;
+    color: var(--Timberwolf);
+}
+
+.tecnologia {
+    width: 30px;
+}
+
+.contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 40px;
+}
+
+.historial {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+#materia {
+    background: var(--Eerie-black);
+    color: var(--Timberwolf);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    border-radius: 6px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px var(--Eerie-black);
+}
+
+button {
+    color: var(--Timberwolf);
+    font-weight: bold;
+    background: var(--Eerie-black);
+    border-style: solid;
+    width: 150px;
+    padding: 5px 0px;
+    border-color: var(--Eerie-black);
+}
+
+button:hover {
+    border-color: var(--coquelicot);
+    color: var(--White);
+    border-width: 2px 0px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #ccc;
+    color: #333;
 }
 .textcontenido{
-    width: 300px;
+    text-align: center;
+    width: 70%;
 }
-.section-uno{
-    margin: 12px;
-}
-.proyecto b{
-    background-color: var(--color-main);
-    width: 300px;
-    color:azure;
+.botones-js{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
 }
