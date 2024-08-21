@@ -4,52 +4,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <title>presentacion</title>
 </head>
 
 <body>
+  <header>
+    <b class="logo">STIVEN</b>
+    <nav>
+      <a class="link-nav" href="#">proyectos</a>
+      <a class="link-nav" href="#">acerca de mi</a>
+      <a class="link-nav" href="#">universidad</a>
+    </nav>
+  </header>
   <main class="contenedor">
-    <section class="section-principal">
-      <article class="section-uno">
-        <div class="contenido">
-            <b>Brayan rodriguez</b>
-            <img class="foto" src="/img/foto.jpg" alt="">
-          <p class="textcontenido">Estudiante de tecnologia en sistemas quinto semestre enfocado en la programacion web</p>
-          <b>tecnologias</b>
-          <div>
-            <img class="tecnologia" src="/img/html.svg" alt="">
-            <img class="tecnologia" src="/img/css.svg" alt="">
-            <img class="tecnologia" src="/img/tailwind.svg" alt="">
-            <img class="tecnologia" src="/img/js.svg" alt="">
+    <article class="section-uno">
+      <b>Brayan rodriguez</b>
+      <div class="foto"></div>
+      <p class="textcontenido">
+        Estudiante de tecnologia en sistemas en la universidad santiago de cali quinto semestre enfocado en
+        desarrollo web
+      </p>
+    </article>
+    <article class="contenedor-historia">
+      <b>historial academico</b>
+      <div class="historial">
+        <div id="materia">
+          <p>ciber seguridad</p>
+          <p>Hr: 14:00 pm - 17:00 pm</p>
+          <button id="info">+ info</button>
+        </div>
+        <div id="materia">
+          <p>interactividad de redes</p>
+          <p>Hr: 18:30 pm - 21:30 pm</p>
+          <button id="info">+ info</button>
+        </div>
+        <div id="materia">
+          <p>calculo 1</p>
+          <p>Hr: 18:30 pm - 21:30 pm</p>
+          <button id="info">+ info</button>
+        </div>
+        <div id="materia">
+          <p>construcion de software</p>
+          <p>Hr: 10:00 am - 13:00 pm</p>
+          <button id="info">+ info</button>
+        </div>
+        <div id="materia">
+          <p>desarrollo web</p>
+          <p>Hr : 13:00 pm - 16:00 pm</p>
+          <button id="info">+ info</button>
+        </div>
+      </div>
+    </article>
+    <article class="botones-js">
+      <b>talleres y eventos</b>
+      <div>
+        <ul id="taskseguridad">
+          <!-- la lista empieza sin elementos-->
+        </ul>
+        <button id="addTask">agregar tarea</button>
+        <button id="editTask">editar tarea</button>
+        <button id="deleteTask">borrar tarea</button>
+      </div>
+    </article>
+    <article class="section-dos">
+      <div class="contenedor-proyectos">
+        <b class="titulo">proyectos</b>
+        <div class="proyectos">
+          <div class="proyecto">
+            <b>proyecto 1</b>
+            <p>tecnologias</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <img class="tecnologia" src="/img/html.svg" alt="" />
+              <img class="tecnologia" src="/img/icons8-css.svg" alt="" />
+              <img class="tecnologia" src="/img/icons8-viento-de-cola.svg" alt="" />
+              <img class="tecnologia" src="/img/js.svg" alt="" />
+              <img class="tecnologia" src="/img/figura.svg" alt="" />
+              <img class="tecnologia" src="/img/github.svg" alt="" />
+              <img class="tecnologia" src="/img/visual.svg" alt="" />
+            </div>
+            <input class="proyecto1" type="button" value="show more" />
+          </div>
+          <div class="proyecto">
+            <b>proyecto 2</b>
+            <p>tecnologias</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <img class="tecnologia" src="/img/html.svg" alt="" />
+              <img class="tecnologia" src="/img/css.svg" alt="" />
+              <img class="tecnologia" src="/img/tailwind.svg" alt="" />
+              <img class="tecnologia" src="/img/js.svg" alt="" />
+              <img class="tecnologia" src="/img/figura.svg" alt="" />
+              <img class="tecnologia" src="/img/github.svg" alt="" />
+              <img class="tecnologia" src="/img/visual.svg" alt="" />
+            </div>
+            <input class="proyecto2" type="button" value="show more" />
+          </div>
+          <div class="proyecto">
+            <b>proyecto 3</b>
+            <p>tecnologias</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <img class="tecnologia" src="/img/html.svg" alt="" />
+              <img class="tecnologia" src="/img/css.svg" alt="" />
+              <img class="tecnologia" src="/img/tailwind.svg" alt="" />
+              <img class="tecnologia" src="/img/js.svg" alt="" />
+              <img class="tecnologia" src="/img/figura.svg" alt="" />
+              <img class="tecnologia" src="/img/github.svg" alt="" />
+              <img class="tecnologia" src="/img/visual.svg" alt="" />
+            </div>
+            <input class="proyecto3" type="button" value="show more" />
           </div>
         </div>
-      </article>
-      <article class="section-dos">
-        <div class="contenedor-proyectos">
-          <b>proyectos</b>
-          <div class="proyectos">
-            <div class="proyecto">
-              <b> proyecto 1</b>
-              <img class="img-proyecto" src="/img/R.jpg" alt="">
-            </div>
-            <div class="proyecto">
-              <b> proyecto 2</b>
-              <img class="img-proyecto" src="/img/R.jpg" alt="">
-            </div>
-            <div class="proyecto">
-              <b> proyecto 3</b>
-              <img class="img-proyecto" src="/img/R.jpg" alt="">
-            </div>
-            <div class="proyecto">
-              <b> proyecto 4</b>
-              <img class="img-proyecto" src="/img/R.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
+      </div>
+    </article>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
