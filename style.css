@@ -20,7 +20,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    position: fixed;
+    height: 70px;
     width: 100%;
     box-shadow: 0px 0px 10px var(--Eerie-black);
 }
