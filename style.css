@@ -99,7 +99,27 @@ nav {
     gap: 20px;
 }
 
-.titulo {
+.tituloone {
+    color: var(--Eerie-black);
+    border-style: ridge;
+    border-width: 0px 0px 5px 0px;
+    border-color: var(--coquelicot);
+    border-radius: 6px;
+    width: 290px;
+    font-size: x-large;
+    text-align: center;
+}
+.titulotwo {
+    color: var(--Eerie-black);
+    border-style: ridge;
+    border-width: 0px 0px 5px 0px;
+    border-color: var(--coquelicot);
+    border-radius: 6px;
+    width: 280px;
+    font-size: x-large;
+    text-align: center;
+}
+.titulothree {
     color: var(--Eerie-black);
     border-style: ridge;
     border-width: 0px 0px 5px 0px;
@@ -122,6 +142,7 @@ nav {
 
 .tecnologia {
     width: 30px;
+    color: var(--Timberwolf);
 }
 
 .contenedor-historia {
@@ -182,4 +203,15 @@ button:hover {
     align-items: center;
     margin-top: 40px;
     gap: 20px;
+}
+.link-proyecto{
+    text-decoration: none;
+    color: var(--Timberwolf);
+    padding: 9px 5px;
+}
+.link-proyecto:hover{
+    text-decoration: none;
+    color: var(--Timberwolf);
+    background: var(--coquelicot);
+    padding: 9px 5px;
 }
